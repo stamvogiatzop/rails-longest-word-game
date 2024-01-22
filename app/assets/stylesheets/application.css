@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ .flex-grid {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.flex-grid .col {
+  flex: 1;
+  background: rgb(150, 114, 250);
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px dotted black;
+  margin: 3px;
+}

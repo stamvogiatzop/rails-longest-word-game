@@ -1,0 +1,13 @@
+<h1><strong>NEW GAME</strong> 🚀</h1>
+<div class="flex-grid">
+  <% @grid.each do |letter| %>
+    <div class="col"><strong><%=letter%></strong></div>
+  <%end%>
+</div>
+
+<div>
+  <form action="/score" method="get" data-turbo="false">
+    <input type="text" name="word" placeholder="What is the word?">
+    <input type="submit">
+  </form>
+</div>
